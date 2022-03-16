@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 2: Exercício 01 (2022)</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <h1>Frutas</h1>
+      <p>
+        <b>Fruta</b> é um conceito culinário, por oposição ao de legume, um
+        termo popular que em geral compreende os frutos, pseudofrutos (ou
+        <i>frutos acessório</i>)e infrutescências comestíveis e de sabor
+        adocicado que são comercializados, ainda que haja autores que discordem
+        desta definição, por ser em suas opiniões, demasiado simplista.
+      </p>
+
+      <ul>
+        <li>
+          Frutas
+          <ol>
+            <li>Banana</li>
+            <li>Maçã</li>
+            <li>Abacate</li>
+          </ol>
+        </li>
+        <li>
+          Vegetais
+          <ol type="I">
+            <li>Cebola</li>
+            <li>
+              Pimentão
+              <ol type="a">
+                <li>Verde</li>
+                <li>Vermelho</li>
+                <li>Amarelo</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ul>
+
+      <table>
+        <caption>
+          <b>Lucro por mês</b>
+        </caption>
+        <thead>
+          <tr>
+            <th>Mês</th>
+            <th colspan="2">Frutas</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th>Banana</th>
+            <th>Maçã</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Janeiro</td>
+            <td>100</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Fevereiro</td>
+            <td>120</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Março</td>
+            <td>120</td>
+            <td>150</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>340</td>
+            <td>300</td>
+          </tr>
+        </tfoot>
+      </table>
+      <br />
+      <a href="https://ifrs.edu.br/riogrande/" target="_blank">
+        <img src="./imagem1.jpg" alt="Arte de uma banana" width="200" />
+      </a>
+      <figure>
+        <img src="./img/imagem2.jpg" alt="Arte de uma maçã" width="300" />
+        <figcaption>A maçã é o pseudofruto pomáceo da macieira.</figcaption>
+      </figure>
+      <br />
+
+      <form>
+        <fieldset>
+          Usuário: <input type="text" name="nome" size="20" /><br />
+          Senha: <input type="password" name="senha" size="22" /><br />
+          Texto:<br />
+          <textarea name="texto" cols="30" rows="5">Digite!</textarea>
+        </fieldset>
+        <fieldset>
+          Cor favorita: <input type="color" name="cor" /><br /><br />
+          Foto 3x4: <input type="file" name="foto" /><br /><br />
+          Tem alguma alergia:<br />
+          <input type="radio" name="alergia" value="sim" />Sim
+          <input type="radio" name="alergia" value="nao" />Não<br /><br />
+          Frutas favoritas:<br />
+          <input type="checkbox" name="frutas" value="maça" />Mação<br />
+          <input type="checkbox" name="frutas" value="banana" />Banana<br />
+          <input type="checkbox" name="frutas" value="kiwi" />Kiwi<br />
+          <input type="checkbox" name="frutas" value="laranja" />Laranja<br />
+          <input type="checkbox" name="frutas" value="melancia" />Melancia<br />
+          <input type="checkbox" name="frutas" value="uva" />Uva<br />
+          <input type="checkbox" name="frutas" value="caju" />Caju<br />
+          <input type="submit" value="enviar" />
+        </fieldset>
+      </form>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/RPf8cYrA9wQ"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aula 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #E0C9A6;
+        }
+        table {
+            border: 3px solid black;
+        }
+        th,td {
+            border: 2px solid gray;
+            background-color:rgb(199, 194, 194);
+        }
+        img {
+            border: 5px solid greenyellow;
+        }
+        figure {
+            border: 3px dashed green;
+        }
+        .subject {
+            background-color: chocolate;
+     }
+    </style>
+</head>
+<body>
+    <a name="topo">Rolagem para o topo</a>
+    <!-- Tabelas -->
+    <h1 class="subject">Tabelas</h1>
+    <table>
+        <tr>
+            <td>L1C1</td>
+            <td>L1C2</td>
+        </tr>
+        <tr>
+            <td>L2C1</td>
+            <td>L2C2</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td colspan="2">L1</td>
+        </tr>
+        <tr>
+            <td>L2C1</td>
+            <td>L2C2</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td rowspan="2">C1</td>
+            <td>L1C2</td>
+        </tr>
+        <tr>
+            <td>L2C2</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Tabelas Estruturadas -->
+    <table>
+        <caption>Lucro por mês</caption>
+        <thead>
+            <tr>
+                <th>Mês</th>
+                <th>Lucro</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Janeiro</td>
+                <td>R$200</td>
+            </tr>
+                <td>Fevereiro</td>
+                <td>R$50</td>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>R$250</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Imagens -->
+    <h1 class="subject">Imagens</h1>
+    <img src="./img/estadio02.jpg" alt="Vista aérea do estádio do São Paulo de Rio Grande" height="200px">
+    <img src="https://i.pinimg.com/originals/ab/49/e0/ab49e0e77973b47360f17f1b793728e6.png" alt="Vista da arquibancada do estádio do Rio Grande" height="200">
+
+    <!-- Imagens Estruturadas -->
+    <figure>
+        <img src="./img/estadio01.png" alt="Vista área do estádio do Riograndense">
+        <figcaption>Colosso do Trevo tem capacidade para 15 mil torcedores</figcaption>
+    </figure>
+
+    <!-- Links -->
+    <h1 class="subject">Links</h1>
+    <a href="https://www.w3schools.com/css/css_border.asp">CSS Borders</a>
+    <br>
+    <a href="./img/estadio02.jpg">Estádio do São Paulo-RS</a>
+    <br>
+    <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">HTML Color Picker</a>
+    <br>
+    <a href="#topo">Rolar para o topo</a>
+
+        <!-- Formulários -->
+        <h1 class="subject">Formulários</h1>
+        <form method="POST" action="./recebe.php">
+
+            <!-- Textos -->
+            <h2 style="color: purple">Textos</h2>
+            Nome:<input type="text" name="nome" size="20"><br>
+            Senha:<input type="password" name="senha"><br>
+            <input type="hidden" name="user" value="14">
+            Comentário:<br>
+            <textarea name="comentario" cols="40" rows="5">Digite seu comentário</textarea><br>
+            <input type="submit" name="enviar" value="Enviar">
+            <hr size="4px" color="purple">
+
+            <!-- Seleções-->
+            <h2 style="color: purple">Seleções</h2>
+            Time:<br>
+            <input type="radio" name="time" value="Gre">Grêmio<br>
+            <input type="radio" name="time" value="Int">Inter<br>
+            <input type="radio" name="time" value="Juv">Juventude<br>
+            <input type="radio" name="time" value="Cax">Caxias<br>
+            <br>
+
+            SO:<br>
+            <input type="checkbox" name="so"value="win">Windows 10<br>
+            <input type="checkbox" name="so" value="min">Linux Mint<br>
+            <input type="checkbox" name="so" value="ubu">Ubuntu<br>
+            <input type="checkbox" name="so" value="pop">POP OS<br>
+            <input type="checkbox" name="so" value="mac">Mac OS<br>
+            <br>
+
+            Disciplinas:<br>
+            <select name="dis">
+            <option>Interface Web</option>
+            <option>POO</option>
+            <option>Bando de Dados</option>
+            </select>
+            <hr size="4px" color="purple">
+
+            <!-- Tags novas do HTML5-->
+            <h2 style="color: purple">Tags novas do HTML5</h2>
+            Telefone:<input type="tel" name="telefone"><br>
+            Procurar:<input type="search" name="procurar"><br>
+            Email:<input type="email" name="email"><br>
+            Link:<input type="url" name="url"><br>
+            Data:<input type="date" name="dnasc"><br>
+            Número:<input type="number" name="num"><br>
+            Grau:<input type="range" name="grau"><br>
+            Cor:<input type="color" name="cor"><br>
+            Upload:<input type="file" multiple name="arq"><br>
+            Intervalo:<input type="range" min="0" max="100"
+            value="50" name="intervalo">
+            <hr size="4px" color="purple">
+
+            <!-- Atributos das Tags-->
+            <h2 style="color: purple">Atributos das Tags</h2>
+            Nome:<input type="text" name="nome" size="10" maxlength="10" required>
+            Senha:<input type="password" name="senha" autofocus placeholder="Senha" required maxlength="8"><br>
+            <input type="checkbox" name="so" checked value="lin">Linux
+            <input type="checkbox" name="so" value="win">Windows<br>
+            <br>
+        </form>
+
+        <!-- Formulários Estruturados -->
+        <h1 class="subject">Formulários Estruturados</h1>
+        <form>
+            <fieldset>
+                <legend>Dados:</legend>
+                
+                <label for="n1">Nome:</label>
+                <input type="text" id="n1"><br>
+                
+                <label for="s1">Senha:</label>
+                <input type="password" id="s1">
+
+                <input type = "submit" value = "enviar"><br><br>
+
+                <label for="de20a30">20 a 30</label>
+                <input class="input" type="radio" name="idade"
+                id="de20a30" value="20">
+                <br>
+
+                <label for="de30a40">30 a 40</label>
+                <input class="input" type="radio" name="idade"
+                id="de30a40" value="30">
+            </fieldset>
+        </form>
+
+        <!-- Áudios e Vídeos -->
+        <!-- Audio -->
+        <h1 class="subject">Áudios e Vídeos</h1>
+        <audio controls="true" autoplay="true">
+            <source src="./mus.oga" />
+            <source src="./mus.mp3" />
+        </audio>
+        <br>
+        
+        <!-- Vídeo -->
+        <video controls="true" autoplay="true" width="400" height="300">
+            <source src="./u.ogv" />
+        </video>
+
+        <!-- Iframe -->
+        <iframe width="420" height="300" src="https://www.youtube.com/embed/RKMCc-64SjA" allowfullscreen></iframe>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13528.229011987209!2d-52.0884956!3d-32.0406417!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbaa8517ea9d4b26b!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20do%20Rio%20Grande%20do%20Sul%20-%20Campus%20Rio%20Grande!5e0!3m2!1spt-BR!2sbr!4v1646355804229!5m2!1spt-BR!2sbr" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</body>
+</html>
