@@ -5,6 +5,6 @@
 
 ## Interface Web
 
-Repositório destinado ao armazenamento de materiais, exercícios e trabalhos da disciplina de POO do curso de Tecnologia em Análise e Desenvolvimento de Sistenas do IFRS Campus Rio Grande.
+Repositório destinado ao armazenamento de materiais, exercícios e trabalhos da disciplina de **Interface Web** do curso de Tecnologia em Análise e Desenvolvimento de Sistenas do IFRS Campus Rio Grande.
 
 Professor: [Tiago Lopes Telecken](https://sites.google.com/site/telecken/home/iweb).
