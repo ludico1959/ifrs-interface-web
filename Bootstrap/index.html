@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Bootstrap 1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container">
+      <h1>Primeiro exemplo</h1>
+      <p>Alo mundo</p>
+    </div>
+
+    <!-- container fluid -->
+    <div class="container-fluid">
+      <p>Use <kbd>ctrl + p</kbd> para imprimir</p>
+      <p>O elemento <code>div</code> é uma seção do documento</p>
+      <p>Destaque o texto <mark>com mark</mark></p>
+    </div>
+
+    <!-- classes bootstrap para <p> -->
+    <div class="container">
+      <p class="text-muted">muted.</p>
+      <p class="text-primary">important.</p>
+      <p class="text-success">success.</p>
+      <p class="text-info">info</p>
+      <p class="text-warning">warning.</p>
+      <p class="text-danger">danger.</p>
+      <p class="bg-primary">important.</p>
+      <p class="bg-success">success.</p>
+      <p class="bg-info">information.</p>
+      <p class="bg-warning">warning.</p>
+      <p class="bg-danger">danger.</p>
+    </div>
+
+    <!-- tabelas -->
+    <div class="container">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fulano</td>
+            <td>De Tal</td>
+            <td>fulano@example.com</td>
+          </tr>
+          <tr>
+            <td>Beltrano</td>
+            <td>Taltal</td>
+            <td>beltrano@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-danger">
+            <td>Fulano</td>
+            <td>De Tal</td>
+            <td>fulano@example.com</td>
+          </tr>
+          <tr class="table-warning">
+            <td>Beltrano</td>
+            <td>Taltal</td>
+            <td>beltrano@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- imagem -->
+    <img src="sol.jpg" class="rounded" alt="imagem do sol" />
+
+    <!-- botões -->
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+    <!-- jumbotron -->
+    <!-- às vezes é usado como header-->
+    <div class="jumbotron">
+      <h1>Bootstrap Tutorial</h1>
+      <p>Bootstrap é um framework para páginas com HTML, CSS...</p>
+    </div>
+
+    <!-- alert -->
+    <div class="alert alert-success">
+      <strong>Successo!</strong> Indica que uma ação foi realizada
+    </div>
+
+    <!-- barra de progresso -->
+    <div class="progress">
+      <div class="progress-bar" style="width: 70%">70%</div>
+    </div>
+    <br />
+
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width: 20%"></div>
+    </div>
+    <br />
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped" style="width: 40%"></div>
+    </div>
+    <br />
+
+    <div class="progress">
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated"
+        style="width: 40%"
+      ></div>
+    </div>
+    <br />
+
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width: 40%">Free Space</div>
+      <div class="progress-bar bg-warning" style="width: 10%">Warning</div>
+      <div class="progress-bar bg-danger" style="width: 20%">Danger</div>
+    </div>
+  </body>
+</html>
