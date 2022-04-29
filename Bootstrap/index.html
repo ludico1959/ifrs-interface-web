@@ -12,7 +12,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
-  <body>
+  <body style="background-color: antiquewhite">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-light">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 3</a>
+        </li>
+      </ul>
+    </nav>
+
     <!-- container -->
     <div class="container">
       <h1>Primeiro exemplo</h1>
@@ -146,5 +161,29 @@
       <div class="progress-bar bg-warning" style="width: 10%">Warning</div>
       <div class="progress-bar bg-danger" style="width: 20%">Danger</div>
     </div>
+    <br />
+
+    <!-- grid -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4" style="background-color: lavender">.col-sm-4</div>
+        <div class="col-sm-4" style="background-color: gray">.col-sm-4</div>
+        <div class="col-sm-4" style="background-color: lavender">.col-sm-4</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4" style="background-color: lavender">.col-sm-4</div>
+        <div class="col-sm-8" style="background-color: gray">.col-sm-8</div>
+      </div>
+    </div>
+
+    <!-- tooltip -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="tooltip"
+      title="Hooray!"
+    >
+      Hover over me!
+    </button>
   </body>
 </html>
